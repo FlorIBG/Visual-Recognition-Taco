@@ -10,7 +10,7 @@ var fs = require('fs');
 //set IBM cloud credentials in this section
 var visualRecognition = new VisualRecognitionV3({
   version: '2019-05-29',
-  iam_apikey: 'Remplace aqui'
+  iam_apikey: 'ZddVDUNTYhUYJqdokCEqAqjEM3WmAgFiyxyy6xG7oHEh'
 });
 
 // Set The Storage Engine
@@ -72,7 +72,7 @@ app.post('/upload', (req, res) => {
         });
       } else {
         var images_file = fs.createReadStream(`./public/uploads/${req.file.filename}`);
-        var classifier_ids = ["Tiposdetaco_2107577272"];
+        var classifier_ids = ["Tacos_390469280"];
         console.log("datos de la imagen -- " + images_file);
         //
           var params = {
